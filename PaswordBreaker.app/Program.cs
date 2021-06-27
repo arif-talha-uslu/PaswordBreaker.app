@@ -33,7 +33,7 @@ namespace PaswordBreaker.app
             string pas = Console.ReadLine();
 
             string start = DateTime.Now.ToString();
-            long counter = 0;
+            
             for (; ;)
             {
                 three[0] = myphabet[rnd.Next(42)];
@@ -63,7 +63,6 @@ namespace PaswordBreaker.app
 
                 //if (threelist.Contains(new string(three)))
                 //{
-                //    counter++;
                 //    continue;
                 //}
                 //if (fourlist.Contains(new string(four)))
@@ -146,7 +145,7 @@ namespace PaswordBreaker.app
             }
 
             string finish = DateTime.Now.ToString();
-            Console.WriteLine($"\n\n{start}\n{finish}\n\nWe have a victory!!!\n{counter}. attempt successful");
+            Console.WriteLine($"\n\n{start}\n{finish}\n\nWe have a victory!!!\nLast attempt successful");
         }
     }
 }
